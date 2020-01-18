@@ -128,8 +128,8 @@ public class Constants {
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-            new CoinAddress(helpico.get(),      new ServerAddress("ex.blockhunter.info", 5001),
-                                                    new ServerAddress("pool.blockhunter.info", 5001)),
+            new CoinAddress(helpico.get(),      new ServerAddress("ex.blockhunter.info", 5002),
+                                                    new ServerAddress("pool.blockhunter.info", 5002)),
             new CoinAddress(BitcoinTest.get(),      new ServerAddress("btc-testnet-cce-1.coinomi.net", 15001),
                                                     new ServerAddress("btc-testnet-cce-2.coinomi.net", 15001)),
             new CoinAddress(DogecoinMain.get(),     new ServerAddress("doge-cce-1.coinomi.net", 5003),
