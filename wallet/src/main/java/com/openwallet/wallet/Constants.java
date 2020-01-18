@@ -128,8 +128,8 @@ public class Constants {
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-            new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.coinomi.net", 5001),
-                                                    new ServerAddress("btc-cce-2.coinomi.net", 5001)),
+            new CoinAddress(helpico.get(),      new ServerAddress("ex.blockhunter.info", 5001),
+                                                    new ServerAddress("pool.blockhunter.info", 5001)),
             new CoinAddress(BitcoinTest.get(),      new ServerAddress("btc-testnet-cce-1.coinomi.net", 15001),
                                                     new ServerAddress("btc-testnet-cce-2.coinomi.net", 15001)),
             new CoinAddress(DogecoinMain.get(),     new ServerAddress("doge-cce-1.coinomi.net", 5003),
@@ -221,7 +221,7 @@ public class Constants {
     public static final HashMap<CoinType, String> COINS_BLOCK_EXPLORERS;
     static {
         COINS_ICONS = new HashMap<>();
-        COINS_ICONS.put(CoinID.BITCOIN_MAIN.getCoinType(), R.drawable.bitcoin);
+        COINS_ICONS.put(CoinID.helpico.getCoinType(), R.drawable.helpico);
         COINS_ICONS.put(CoinID.BITCOIN_TEST.getCoinType(), R.drawable.bitcoin_test);
         COINS_ICONS.put(CoinID.DOGECOIN_MAIN.getCoinType(), R.drawable.dogecoin);
         COINS_ICONS.put(CoinID.DOGECOIN_TEST.getCoinType(), R.drawable.dogecoin_test);
@@ -308,8 +308,8 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.IXCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ixc/tx.dws?%s");
     }
 
-    public static final CoinType DEFAULT_COIN = BitcoinMain.get();
-    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) BitcoinMain.get());
+    public static final CoinType DEFAULT_COIN = helpico.get();
+    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) helpico.get());
     public static final ArrayList<String> DEFAULT_TEST_COIN_IDS = Lists.newArrayList(
             BitcoinTest.get().getId(),
             LitecoinTest.get().getId(),
@@ -317,7 +317,7 @@ public class Constants {
     );
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
-            BitcoinMain.get(),
+            helpico.get(),
             AsiacoinMain.get(),
             AuroracoinMain.get(),
             BatacoinMain.get(),
